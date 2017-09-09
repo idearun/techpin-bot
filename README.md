@@ -76,8 +76,4 @@ See also the list of [contributors](https://github.com/idearun/techpin-bot/contr
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
-[comment]: <> (## Acknowledgments)
-
-[//]: <> (* Hat tip to anyone who's code was used)
-[//]: <> (* Inspiration)
 

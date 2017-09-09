@@ -1,6 +1,6 @@
 # Techpin Telegram Bot
 
-A telegram bot for the Techpin.ir
+A Telegram bot for the Techpin.ir
 
 What can this bot do❔
 
@@ -76,9 +76,8 @@ See also the list of [contributors](https://github.com/idearun/techpin-bot/contr
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
-## Acknowledgments
+[//]: <> (## Acknowledgments)
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+[//]: <> (* Hat tip to anyone who's code was used)
+[//]: <> (* Inspiration)
 

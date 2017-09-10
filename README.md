@@ -83,6 +83,8 @@ See also the list of [contributors](https://github.com/idearun/techpin-bot/contr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MPL 2.0 License - see the [LICENSE.md](LICENSE) file for details or vist the link below :
+
+https://www.mozilla.org/en-US/MPL/2.0/
 
 

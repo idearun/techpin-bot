@@ -1,15 +1,27 @@
 # Techpin Telegram Bot
 
-A Telegram bot for the Techpin.ir
 
 What can this bot do:
 
-▶️ Watch the list of startups depending on their categories
+- Watch the list of startups depending on their categories
 
-▶️ Search for details of any startup using keywoards or names
+- Search for details of any startup using keywoards or names
 
-▶️ Watch a random startup and its details
+- Watch a random startup and its details
 
+
+### Getting Started
+
+More information about what is Techpin and how to use its API:
+
+
+```
+https://github.com/idearun/TechPin-API
+```
+
+```
+https://github.com/idearun/TechPin-WebClient
+```
 
 
 ### Installing
@@ -46,7 +58,7 @@ http://telegra.ph/Set-up-your-bot-with-BotFather-09-06
  https://api.telegram.org/bot<token>/setWebhook?url=https://mywebsite.com/path/to/giveawaysbot.php
  ```
 
- 5- Happy Coding!😉 You can easilly test this file on your own server
+ 5- Happy Coding! You can easilly test this file on your own server
  
 
 ## Built With

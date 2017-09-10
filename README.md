@@ -2,7 +2,7 @@
 
 A Telegram bot for the Techpin.ir
 
-What can this bot do❔
+What can this bot do:
 
 ▶️ Watch the list of startups depending on their categories
 
@@ -10,9 +10,6 @@ What can this bot do❔
 
 ▶️ Watch a random startup and its details
 
-
-
-![screenshot](https://user-images.githubusercontent.com/22890731/30146319-93614e66-93ac-11e7-9c81-fbc670c87331.png)
 
 
 ### Installing
@@ -23,7 +20,7 @@ If you want to run this code on your local machine you should install and run XA
 http://www.dwuser.com/education/content/why-you-need-a-testing-server-and-how-to-do-it/
 ```
 
-Thanks to Dana Winslow for her great Article!😊
+Thanks to Dana Winslow for her great Article!
 
 If you want to run this code on your own server you should have a server capable of running PHP +5 code.
 
@@ -39,7 +36,7 @@ Follow these steps to set-up & test your bot:
 http://telegra.ph/Set-up-your-bot-with-BotFather-09-06
 ```
 
- 2- After you received your bot authorization token JUST SAVE IT SOMEWHERE!!😁
+ 2- After you received your bot authorization token JUST SAVE IT SOMEWHERE!!
 
  3- Prepare a SSL server for your .PHP file (It should be like https://example.com)
 
@@ -49,14 +46,14 @@ http://telegra.ph/Set-up-your-bot-with-BotFather-09-06
  https://api.telegram.org/bot<token>/setWebhook?url=https://mywebsite.com/path/to/giveawaysbot.php
  ```
 
- 5- Happy Coding!😉 You can easilly test this file on your own server ☺️
+ 5- Happy Coding!😉 You can easilly test this file on your own server
  
 
 ## Built With
 
 * [PHP: Hypertext Preprocessor](http://php.net/manual/en/intro-whatis.php/)
 * [Telegram Bot API](https://core.telegram.org/bots/api)
-* [PhpStorm: Lightning-Smart IDE for PHP Programming by JetBrains](https://www.jetbrains.com/phpstorm/)
+
 
 ## Contributing
 

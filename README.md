@@ -41,9 +41,9 @@ Follow these steps to set-up & test your bot:
 
 1- Setup your bot with @BotFather (You can follow the link below) :
 
-```
+
 http://telegra.ph/Set-up-your-bot-with-BotFather-09-06
-```
+
 
  2- After you received your bot authorization token JUST SAVE IT SOMEWHERE!!
 

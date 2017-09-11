@@ -37,7 +37,7 @@ Thanks to Dana Winslow for her great Article!
 If you want to run this code on your own server you should have a server capable of running PHP +5 code.
 
 
-## Running the tests
+## Usage
 
 
 Follow these steps to set-up & test your bot:

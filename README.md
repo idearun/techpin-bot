@@ -15,13 +15,10 @@ What can this bot do:
 More information about what is Techpin and how to use its API:
 
 
-```
 https://github.com/idearun/TechPin-API
-```
 
-```
 https://github.com/idearun/TechPin-WebClient
-```
+
 
 
 ### Installing

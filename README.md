@@ -28,9 +28,9 @@ https://github.com/idearun/TechPin-WebClient
 
 If you want to run this code on your local machine you should install and run XAMPP/MAMP dependind on your OS. You can follow this link to get the idea of how to install them on your local machine and run a simple PHP code:
 
-```
+
 http://www.dwuser.com/education/content/why-you-need-a-testing-server-and-how-to-do-it/
-```
+
 
 Thanks to Dana Winslow for her great Article!
 

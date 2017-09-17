@@ -59,7 +59,7 @@ if ($messageText == "/start") {
     //Send message to the user
     file_get_contents($apiLink . "sendmessage?chat_id=$chatID&text=" . $output . "&disable_web_page_preview=true&parse_mode=HTML&reply_markup=" . $reply);
 } else if ($messageText == "جستجو") {
-    $search = "برای جستجو کلید واژه یا نام استارتاپ مورد نظر خود را وارد کنید:";
+    $search = "برای جستجو کلید واژه یا نام استارتاپ مورد نظر خود را به انگلیسی وارد کنید:";
     file_get_contents($apiLink . "sendmessage?chat_id=$chatID&text=" . $search . "&reply_markup=" . $reply);
 } else if ($messageText == "تصادفی") {
     //Get a random result using Techpin's API
@@ -126,8 +126,8 @@ if ($messageText == "/start") {
         }
     }
     if (empty($products)) {
-        //If command do not found send this message:
-        file_get_contents($apiLink . "sendmessage?chat_id=$chatID&text=" . "دستور نامعتبری وارد کرده اید");
+        //If startups do not found send this message:
+        file_get_contents($apiLink . "sendmessage?chat_id=$chatID&text=" . "استارتاپ مورد نظر شما یافت نشد");
     } else {
         foreach ($products as $product) {
             $name = $product->name_en;

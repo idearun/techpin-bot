@@ -7,6 +7,14 @@
 * PHP
 */
 
+// Check connection to DB (Optional)
+$connectDB = mysqli_connect("localhost", "YOUR_USERNAME", "YOUR_PASSWORD", "YOUR_DB");
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+mysqli_set_charset($connectDB, "utf8");
+
+
 //Define variables
 $apiLink = "https://api.telegram.org/bot[YOUR_API_KEY]/";
 $update = file_get_contents("php://input");
@@ -15,6 +23,17 @@ $username = $updateArray["message"]["chat"]["username"];
 $userID = $updateArray["message"]["chat"]["id"];
 $chatID = $updateArray["message"]["chat"]["id"];
 $messageText = $updateArray["message"]["text"];
+
+//Add Users to DB to keep track of users (Optional)
+$select_user_log = "SELECT * from USERS_TABLE_NAME where YOUR_USERNAMES_COLUMN_NAME = '$username' ";
+$run_user_log = mysqli_query($connectDB, $select_user_log);
+if (mysqli_num_rows($run_user_log) == 1) {
+
+} else {
+    $insert_log = "insert into USERS_TABLE_NAME (YOUR_USERNAMES_COLUMN_NAME) VALUE ('$username')";
+    $run_insert = mysqli_query($connectDB, $insert_log);
+}
+
 
 //Add Keyboard
 $keyboard = array(
@@ -37,7 +56,7 @@ if ($messageText == "/start") {
         $name = $product->name_en;
         $logo = $product->details->logo;
         $slug = $product->slug;
-        $startupLink = "<a href='techpin.ir/".$slug."'>".$name."</a>";
+        $startupLink = "<a href='techpin.ir/" . $slug . "'>" . $name . "</a>";
         $output .= $startupLink;
         $output .= "%0A%0A";
     };
@@ -52,7 +71,7 @@ if ($messageText == "/start") {
         $name = $product->name_en;
         $logo = $product->details->logo;
         $slug = $product->slug;
-        $startupLink = "<a href='techpin.ir/".$slug."'>".$name."</a>";
+        $startupLink = "<a href='techpin.ir/" . $slug . "'>" . $name . "</a>";
         $output .= $startupLink;
         $output .= "%0A%0A";
     };
@@ -96,8 +115,8 @@ if ($messageText == "/start") {
         $rep .= "🔢 Launch Year: " . $launch;
         $rep .= "%0A%0A";
     }
-    if (!empty($website)){
-        $rep .=  "⏺ http://" . $slug;
+    if (!empty($website)) {
+        $rep .= "⏺ http://" . $slug;
         $rep .= "%0A%0A";
     }
 
@@ -160,8 +179,8 @@ if ($messageText == "/start") {
                 $rep .= "🔢 Launch Year: " . $launch;
                 $rep .= "%0A%0A";
             }
-            if (!empty($website)){
-                $rep .=  "⏺ http://" . $slug;
+            if (!empty($website)) {
+                $rep .= "⏺ http://" . $slug;
                 $rep .= "%0A%0A";
             }
 
